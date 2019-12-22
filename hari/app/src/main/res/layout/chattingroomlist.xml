@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/CC">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="12"
+        android:layout_marginBottom="10dp">
+
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/image_border"
+            android:background="@drawable/pro1">
+
+
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="50"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/TextView_chatting_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="제목"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/TextView_chatting_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="내용"
+            android:layout_weight="30"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="40"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60"
+            android:gravity="center_vertical"
+            />
+
+
+        <TextView
+            android:id="@+id/TextView_chatting_change"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="내용"
+            android:layout_weight="55"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>

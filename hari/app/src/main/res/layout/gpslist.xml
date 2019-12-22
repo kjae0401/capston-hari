@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/CC">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        app:srcCompat="@drawable/ic_gps" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView_gpslist_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="fill"
+            android:text="이름"
+            android:textColor="@color/Cm"
+            android:textSize="18dp"
+            android:fontFamily="@font/onigd"
+            android:typeface="serif"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/TextView_gpslist_address"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:gravity="start"
+            android:text="주소"
+            android:textSize="11dp"
+            android:fontFamily="@font/nyjgd"
+            android:typeface="serif"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/TextView_gpslist_phone"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:gravity="start"
+            android:text="번호"
+            android:textSize="11dp"
+            android:fontFamily="@font/nyjgd"
+            android:typeface="serif"
+            android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

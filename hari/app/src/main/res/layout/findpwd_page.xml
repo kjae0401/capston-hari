@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".FindPWD">
+
+    <EditText
+        android:id="@+id/EditText_findpwd_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:hint="가입시 사용한 이메일 입력"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/EditText_findpwd_id"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditText_findpwd_email"
+        android:layout_alignStart="@+id/EditText_findpwd_email"
+        android:layout_alignEnd="@+id/EditText_findpwd_email"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:hint="아이디 입력"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/Button_findpwd"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/EditText_findpwd_id"
+        android:layout_alignStart="@+id/EditText_findpwd_email"
+        android:layout_alignEnd="@+id/EditText_findpwd_email"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="-3dp"
+        android:background="@drawable/buttonshape2"
+        android:text="비밀번호 찾기"
+        android:textSize="20dp"
+        android:textColor="@color/Cm"/>
+
+    <EditText
+        android:id="@+id/EditText_findpwd_changepwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/EditText_findpwd_email"
+        android:layout_alignEnd="@+id/EditText_findpwd_email"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="3dp"
+        android:inputType="textPassword"
+        android:hint="변경할 비밀번호 입력"
+        android:singleLine="true"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/EditText_findpwd_changepwdconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditText_findpwd_changepwd"
+        android:layout_alignStart="@+id/EditText_findpwd_email"
+        android:layout_alignEnd="@+id/EditText_findpwd_email"
+        android:layout_marginTop="10dp"
+        android:hint="변경할 비밀번호 재입력"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/Button_findpwd_change"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_below="@+id/EditText_findpwd_changepwdconfirm"
+        android:layout_alignStart="@+id/EditText_findpwd_email"
+        android:layout_alignEnd="@+id/EditText_findpwd_email"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/buttonshape2"
+        android:text="비밀번호 변경"
+        android:textSize="20dp"
+        android:textColor="@color/Cm"
+        android:visibility="invisible" />
+
+</RelativeLayout>

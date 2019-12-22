@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/CC"
+    tools:context=".Chatting">
+
+
+    <LinearLayout
+        android:id="@+id/chatToplinear"
+        android:background="@color/SG"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/SG"
+            android:layout_marginLeft="10dp"
+            android:gravity="fill"
+            android:text="  채팅"
+            android:textColor="@android:color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="5"></View>
+
+        <Button
+            android:id="@+id/Button_chatting_create"
+            android:text="+"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="@drawable/buttonshape3" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ListView_chatting_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:overScrollMode="never"
+        android:dividerHeight="0px"
+        android:divider="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chatToplinear"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@color/CC"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

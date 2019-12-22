@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ContentAdd">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="start|center_horizontal|center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="0dp"
+        android:text="내역 추가"
+        android:textColor="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/EditText_content_add_money"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="추가할 사용 금액을 입력하세요."
+        android:paddingStart="24dp"
+        android:paddingEnd="0dp"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/EditText_content_add_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:hint="추가할 사용 내용을 입력하세요."
+        android:paddingStart="24dp"
+        android:paddingEnd="0dp"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CheckBox_content_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="입금" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4" />
+
+        <TextView
+            android:id="@+id/Button_content_add_cancle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/Button_content_add_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="추가"
+            android:textColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+</LinearLayout>

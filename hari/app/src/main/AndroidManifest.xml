@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.capston.hari">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ChattingListAdapter"></activity>
+        <activity android:name=".PersonInvite"></activity>
+        <activity
+            android:name=".ContentAdd"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name=".CardAdd"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity android:name=".HoseKeeping" />
+        <activity android:name=".GPS" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBJCJ7GhDst22CWfbOeyXEaKoQ4y0UoCF8" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".DrawerPage"
+            android:theme="@style/Theme.Transparent" />
+
+        <receiver
+            android:name=".SMSReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".FriendAdd"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity android:name=".CreateChattingRoom" />
+
+        <service
+            android:name=".ClientSocketService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".ChattingRoom" />
+        <activity android:name=".FindPWD" />
+        <activity android:name=".FindID" />
+        <activity android:name=".MemberJoin" />
+        <activity android:name=".Main" />
+        <activity android:name=".LogIn" />
+        <activity
+            android:name=".Loading"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
